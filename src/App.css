@@ -16,6 +16,7 @@
 
 .sideBar {
   border-style: groove;
+  background-color: #005959;
   width: 20%;
   height: 100%;
   position: absolute;
@@ -23,14 +24,15 @@
 }
 
 .social-icons {
+  background-color: #003333;
+
   position: absolute;
   left:30%;
-  top: 86%;
+  top: 85%;
   text-align: center;
 }
 
 .circle {
-
   left: 50%
 }
 
@@ -38,12 +40,75 @@
   position: relative;
   left: 35%;
 }
-.profile-pic {
-
-}
 
 .white-text {
   position: relative;
   right: 35%;
   font-weight: bold;
+}
+
+.background {
+  background-color: #003333;
+}
+
+.intro {
+  background-color: #003333;
+}
+
+#introduction:hover{
+  color: white !important;
+  
+}
+
+.port {
+  background-color: #003333;
+}
+#portfolio {
+  color: grey;
+}
+
+.ab{
+  background-color: #003333;
+}
+#about {
+  color: grey;
+}
+
+.co {
+  background-color: #003333;
+}
+
+#contact {
+  color: grey;
+}
+
+#introduction{
+  color: grey;
+}
+
+#title {
+  position: relative;
+  right: 35%
+}
+
+#name{
+  font-weight: bold;
+}
+
+
+#slide-out{
+    background-color: #003333;
+}
+
+#linkedin {
+  background-color: grey;
+  text-shadow: 0 0 3px white;
+}
+
+#github {
+  background-color: grey;
+}
+
+#gmail {
+  background-color: grey;
 }
