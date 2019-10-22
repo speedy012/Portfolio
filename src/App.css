@@ -5,14 +5,82 @@
   display: grid;
 }
 
-.body {
-  border-style: dashed;
+.intro-comp {
+  background-image: url('night.jpeg');
+  background-position: center;
+  background-size: cover;
   width:80%;
   height: 100%;
   position: absolute;
   left: 20%;
-  overflow-y: auto
+  overflow: visible;
 }
+
+.intro-body {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: 'Helvetica';
+}
+
+.highlight {
+  color: white;
+}
+
+.btn-large {
+background-color: grey !important;
+font-family: 'Helvetica' !important;
+text-transform: capitalize !important;
+font-weight: 900;
+}
+
+.about-comp {
+  top: 200%;
+  position: absolute;
+  border-style: solid;
+  background-color: red;
+  width: 80%;
+  height: 100%;
+  left: 20%;
+}
+
+.portfolio-comp {
+  top: 100%;
+  position: absolute;
+  background-image: url('bluetint.jpg');
+  background-position: center;
+  background-size: cover;
+  border-style: solid;
+  background-color: green;
+  width: 80%;
+  height: 100%;
+  left: 20%;
+}
+
+.photo1 {
+  border-style: dotted;
+  position: relative;
+  left: 5%;
+  width: 93%;
+}
+
+.easy-parking-pic {
+  position: absolute;
+  left: 5%;
+  width: 95%;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-comp {
+  top: 300%;
+  position: absolute;
+}
+
+
+
+
+
 
 .sideBar {
   border-style: groove;
@@ -24,7 +92,7 @@
 }
 
 .social-icons {
-  background-color: #003333;
+  background-color: #191919;
 
   position: absolute;
   left:30%;
@@ -48,38 +116,53 @@
 }
 
 .background {
-  background-color: #003333;
+
+  background-color: #191919;
 }
 
 .intro {
-  background-color: #003333;
+  background-color: #191919;
 }
 
 #introduction:hover{
   color: white !important;
-  
+
 }
 
 .port {
-  background-color: #003333;
+  background-color: #191919;
 }
+
 #portfolio {
   color: grey;
 }
 
-.ab{
-  background-color: #003333;
+#portfolio:hover {
+  color: white;
 }
+
+.ab{
+  background-color: #191919;
+}
+
 #about {
   color: grey;
 }
 
+#about:hover {
+  color:white;
+}
+
 .co {
-  background-color: #003333;
+  background-color: #191919;
 }
 
 #contact {
   color: grey;
+}
+
+#contact:hover {
+  color: white;
 }
 
 #introduction{
@@ -92,12 +175,13 @@
 }
 
 #name{
-  font-weight: bold;
+  font-weight: 900;
 }
 
 
 #slide-out{
-    background-color: #003333;
+    background-color: #191919;
+    font-family: 'Helvetica';
 }
 
 #linkedin {
@@ -111,4 +195,7 @@
 
 #gmail {
   background-color: grey;
+}
+.material-icons{
+  color:grey;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 
+
 class Sidebar extends Component {
 
   componentDidMount() {
@@ -32,9 +33,9 @@ class Sidebar extends Component {
              <a href="#user">
                <img className="circle" src={require('../new_pic.jpg')} alt="background-pic"/>
              </a>
-               <strong id="name" className="white-text name">Herman Rivas</strong>
-             <a href="#email">
-               <span id="title" className="grey-text email ">Software Engineer</span>
+               <span id="name" className="white-text name">Herman Rivas</span>
+             <a href="#title">
+               <span id="title" className="grey-text  ">Software Engineer</span>
              </a>
              </div>
            </div>
@@ -57,7 +58,7 @@ class Sidebar extends Component {
          </li>
          <li className="co">
            <a id="contact" href="#!">
-            Contact <i className="material-icons right grey-text ">mail_outline</i>
+            Contact <i className="material-icons right grey-text">mail_outline</i>
             </a>
          </li>
          <li>
