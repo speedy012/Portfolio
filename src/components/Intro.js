@@ -11,7 +11,7 @@ class Intro extends React.Component {
         <br/>living and working in <span className="highlight">NYC</span>
       </h2>
       <div id="btn">
-        <a className="btn-large waves-effect waves-light" href="my portfolio button">My Portfolio</a>
+        <a className="btn-large waves-effect waves-light" href="my portfolio button">View My Work</a>
       </div>
       </div>
     </div>

@@ -34,46 +34,81 @@ text-transform: capitalize !important;
 font-weight: 900;
 }
 
-.about-comp {
-  top: 200%;
-  position: absolute;
-  border-style: solid;
-  background-color: red;
-  width: 80%;
-  height: 100%;
-  left: 20%;
-}
-
 .portfolio-comp {
+  font-family: 'Helvetica';
   top: 100%;
   position: absolute;
   background-image: url('bluetint.jpg');
   background-position: center;
   background-size: cover;
-  border-style: solid;
-  background-color: green;
+  width: 80%;
+  height: 200%;
+  left: 20%;
+}
+
+.photo1 {
+  position: relative;
+  left: 2%;
+  width: 85%;
+  box-shadow: 10px 10px 5px #888
+}
+
+#link{
+  font-weight: bolder;
+  text-decoration: underline;
+  color:black;
+}
+
+.photo2 {
+  position: relative;
+  left: 2%;
+  width: 85%;
+  box-shadow: 10px 10px 5px #888
+}
+
+.title {
+  font-weight: bold;
+}
+
+.about-comp {
+  top: 300%;
+  font-family: 'Helvetica';
+  position: absolute;
+  background-image: url('lightdesk.jpg');
+  background-position: center;
+  background-size: cover;
   width: 80%;
   height: 100%;
   left: 20%;
 }
 
-.photo1 {
-  border-style: dotted;
-  position: relative;
-  left: 5%;
-  width: 93%;
+.personal-pic {
+  top: 50%;
+  right: 60%;
+  width: 30%;
+  bottom: 0%;
+  transform: rotate(90deg);
+  position: absolute;
 }
 
-.easy-parking-pic {
+.opening {
   position: absolute;
+  top: 30%;
   left: 5%;
-  width: 95%;
-  background-position: center;
-  background-size: cover;
+  float: left;
+}
+
+.bio-body{
+font-family: 'Helvetica';
+  position: absolute;
+  left: 45%;
+  top: 50%;
+
+  font-weight: bold;
 }
 
 .contact-comp {
-  top: 300%;
+  top: 400%;
   position: absolute;
 }
 
