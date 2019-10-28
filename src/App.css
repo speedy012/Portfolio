@@ -13,7 +13,7 @@
   height: 100%;
   position: absolute;
   left: 20%;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 .intro-body {
@@ -108,14 +108,21 @@ font-family: 'Helvetica';
 }
 
 .contact-comp {
+  overflow-x: hidden;
+  background-color: #E6D0B4;
   top: 400%;
+  width: 99.8%;
   position: absolute;
+  height: 45%;
+  font-family: 'Helvetica' !important;
 }
 
-
-
-
-
+.contact-body{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+}
 
 .sideBar {
   border-style: groove;
@@ -233,4 +240,8 @@ font-family: 'Helvetica';
 }
 .material-icons{
   color:grey;
+}
+
+.material-icons:hover{
+  color: white !important;
 }
