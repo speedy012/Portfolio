@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 
@@ -41,26 +42,34 @@ class Sidebar extends Component {
            </div>
            <div className="divider"></div>
          </li>
+         <Link  activeClass="active" to="i-comp" spy={true} smooth={true} offset={0} duration= {500}>
          <li className="intro">
            <a id="introduction" href="#!">
              Intro <i className="material-icons right grey-text">home</i>
            </a>
          </li>
+         </Link>
+         <Link  activeClass="active" to="p-comp" spy={true} smooth={true} offset={0} duration= {500}>
          <li className="port">
            <a id="portfolio" href="#!">
             Portfolio <i className="material-icons right grey-text">apps</i>
             </a>
          </li>
+         </Link>
+         <Link  activeClass="active" to="a-comp" spy={true} smooth={true} offset={0} duration= {500}>
          <li className="ab">
            <a id="about" href="#!">
             About Me <i className="material-icons right grey-text">account_box</i>
             </a>
          </li>
+         </Link>
+         <Link  activeClass="active" to="c-comp" spy={true} smooth={true} offset={0} duration= {500}>
          <li className="co">
            <a id="contact" href="#!">
             Contact <i className="material-icons right grey-text">mail_outline</i>
             </a>
          </li>
+         </Link>
          <li>
             <div className="divider"></div>
          </li>

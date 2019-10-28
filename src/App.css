@@ -168,7 +168,7 @@ font-family: 'Helvetica';
 
 #introduction:hover{
   color: white !important;
-
+  background-color: #404040;
 }
 
 .port {
@@ -181,6 +181,7 @@ font-family: 'Helvetica';
 
 #portfolio:hover {
   color: white;
+  background-color: #404040;
 }
 
 .ab{
@@ -193,6 +194,7 @@ font-family: 'Helvetica';
 
 #about:hover {
   color:white;
+  background-color: #404040;
 }
 
 .co {
@@ -205,6 +207,7 @@ font-family: 'Helvetica';
 
 #contact:hover {
   color: white;
+  background-color: #404040;
 }
 
 #introduction{
@@ -219,7 +222,6 @@ font-family: 'Helvetica';
 #name{
   font-weight: 900;
 }
-
 
 #slide-out{
     background-color: #191919;
