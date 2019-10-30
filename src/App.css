@@ -127,6 +127,7 @@ left: 6%;
 
 .large {
   color: black !important;
+  cursor: default;
 }
 
 .sideBar {
