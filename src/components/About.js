@@ -11,10 +11,9 @@ class About extends React.Component {
         <img className="personal-pic" src={require('../me.jpg')} alt="surf-pic"/>
       </div>
       <div>
-        <p className="bio-body"> A Full stack software engineer <br/> building software
-        to make people's life easier. <br/> Let's do something special! <br/> <br/>
-        Request Resume:
-        </p>
+        <h5 className="bio-body"> A full stack software engineer <br/> building software
+        to make people's <br/>life easier. <br/> <br/> Let's do something special! <br/> <br/>
+        </h5>
       </div>
     </div>
   )

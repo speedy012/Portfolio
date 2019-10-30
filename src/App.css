@@ -1,6 +1,5 @@
 .App {
   width: auto;
-  border-style: solid;
   text-align: center;
   display: grid;
 }
@@ -32,6 +31,9 @@ background-color: grey !important;
 font-family: 'Helvetica' !important;
 text-transform: capitalize !important;
 font-weight: 900;
+position: absolute;
+top: 675%;
+left: 6%;
 }
 
 .portfolio-comp {
@@ -99,21 +101,20 @@ font-weight: 900;
 }
 
 .bio-body{
-font-family: 'Helvetica';
+  font-family: 'Helvetica';
   position: absolute;
   left: 45%;
-  top: 50%;
+  top: 60%;
 
   font-weight: bold;
 }
 
 .contact-comp {
-  overflow-x: hidden;
   background-color: #E6D0B4;
   top: 400%;
-  width: 99.8%;
+  width: 100%;
   position: absolute;
-  height: 45%;
+  height: 55%;
   font-family: 'Helvetica' !important;
 }
 
@@ -122,6 +123,10 @@ font-family: 'Helvetica';
   top: 10%;
   left: 10%;
   right: 10%;
+}
+
+.large {
+  color: black !important;
 }
 
 .sideBar {
@@ -134,7 +139,7 @@ font-family: 'Helvetica';
 }
 
 .social-icons {
-  background-color: #191919;
+  background-color: #000000;
 
   position: absolute;
   left:30%;
@@ -159,11 +164,11 @@ font-family: 'Helvetica';
 
 .background {
 
-  background-color: #191919;
+  background-color: #000000;
 }
 
 .intro {
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #introduction:hover{
@@ -172,7 +177,7 @@ font-family: 'Helvetica';
 }
 
 .port {
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #portfolio {
@@ -185,7 +190,7 @@ font-family: 'Helvetica';
 }
 
 .ab{
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #about {
@@ -198,7 +203,7 @@ font-family: 'Helvetica';
 }
 
 .co {
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #contact {
@@ -224,7 +229,7 @@ font-family: 'Helvetica';
 }
 
 #slide-out{
-    background-color: #191919;
+    background-color: #000000;
     font-family: 'Helvetica';
 }
 
@@ -246,4 +251,64 @@ font-family: 'Helvetica';
 
 .material-icons:hover{
   color: white !important;
+}
+
+.sidebar > .active {
+  border-bottom: 3px solid white;
+}
+
+.icon {
+  z-index: 999;
+  position: absolute;
+  overflow: hidden;
+
+  top:45%;
+  width: 130px;
+  height: 50px;
+  display: inline-block;
+
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-family: 'Helvetica' !important;
+  font-weight: 900;
+}
+
+.icon:nth-child(1) { background: grey; }
+
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+.icon:active:after {
+  opacity: 0;
 }
