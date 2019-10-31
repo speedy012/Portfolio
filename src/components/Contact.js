@@ -19,7 +19,6 @@ class Contact extends React.Component {
       <br/>
       <i onClick={this.scrollIntro} className="large material-icons" href="#!">arrow_upward</i>
     </div>
-
     </div>
   )
 }
