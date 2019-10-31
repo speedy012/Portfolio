@@ -107,11 +107,11 @@ left: 6%;
   position: absolute;
   left: 45%;
   top: 60%;
-
   font-weight: bold;
 }
 
 .contact-comp {
+  overflow-y: hidden;
   overflow-x: hidden;
   background-color: #E6D0B4;
   top: 400%;
