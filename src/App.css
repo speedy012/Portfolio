@@ -37,6 +37,7 @@ left: 6%;
 }
 
 .portfolio-comp {
+  overflow-x: hidden;
   font-family: 'Helvetica';
   top: 100%;
   position: absolute;
@@ -73,6 +74,7 @@ left: 6%;
 }
 
 .about-comp {
+  overflow-x: hidden;
   top: 300%;
   font-family: 'Helvetica';
   position: absolute;
@@ -110,9 +112,11 @@ left: 6%;
 }
 
 .contact-comp {
+  overflow-x: hidden;
   background-color: #E6D0B4;
   top: 400%;
-  width: 100%;
+  width: 80%;
+  left: 20%;
   position: absolute;
   height: 55%;
   font-family: 'Helvetica' !important;
@@ -121,11 +125,14 @@ left: 6%;
 .contact-body{
   position: relative;
   top: 10%;
-  left: 10%;
+  left: 2%;
   right: 10%;
 }
 
 .large {
+  position: absolute;
+  top: 110%;
+  left: 46%;
   color: black !important;
   cursor: default;
 }
