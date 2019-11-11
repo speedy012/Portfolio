@@ -375,4 +375,10 @@ left: 6vw;
     left: 40%;
   }
 
+  .large {
+    position: absolute;
+    top: 81%;
+
+  }
+
 }
