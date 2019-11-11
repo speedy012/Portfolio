@@ -330,7 +330,6 @@ left: 6vw;
 
   .icon {
     position: absolute;
-    background-color: yellow;
     top: 38%;
     left: 40%;
   }
@@ -349,7 +348,7 @@ left: 6vw;
 
   .about-comp{
     position: absolute;
-    top:170%;
+    top:165%;
     left:0;
     width: 100%;
   }
@@ -367,4 +366,13 @@ left: 6vw;
     left: 0%;
 
   }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .icon {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+  }
+
 }
