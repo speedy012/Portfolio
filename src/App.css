@@ -324,6 +324,7 @@ left: 6vw;
     position: absolute;
     top:0;
     left:0;
+    height: 75%;
     width: 100%;
   }
 
@@ -340,7 +341,7 @@ left: 6vw;
 
   .portfolio-comp{
     position: absolute;
-    top:100;
+    top:75%;
     left:0;
     height: auto;
     width: 100%;
@@ -348,15 +349,16 @@ left: 6vw;
 
   .about-comp{
     position: absolute;
-    top:195%;
+    top:170%;
     left:0;
     width: 100%;
   }
 
   .contact-comp{
     position: absolute;
-    top:290%;
+    top:250%;
     left:0;
+    height: 30%;
     width: 100%;
   }
   .sidenav-trigger{
