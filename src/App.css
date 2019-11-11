@@ -46,7 +46,7 @@ left: 6vw;
   background-position: center;
   background-size: cover;
   width: 80%;
-  height: 200%;
+  height: 210%;
   left: 20%;
 }
 
@@ -76,7 +76,7 @@ left: 6vw;
 
 .about-comp {
   overflow-x: hidden;
-  top: 300%;
+  top: 310%;
   font-family: 'Helvetica';
   position: absolute;
   background-image: url('lightdesk.jpg');
@@ -115,7 +115,7 @@ left: 6vw;
   overflow-y: hidden;
   overflow-x: hidden;
   background-color: #E6D0B4;
-  top: 400%;
+  top: 410%;
   width: 80%;
   left: 20%;
   position: absolute;
@@ -132,7 +132,7 @@ left: 6vw;
 
 .large {
   position: absolute;
-  top: 110%;
+  top: 95% !important;
   left: 46%;
   color: black !important;
   cursor: default;
