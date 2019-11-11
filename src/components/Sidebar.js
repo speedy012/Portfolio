@@ -14,10 +14,6 @@ class Sidebar extends Component {
    let instance = M.Sidenav.getInstance(this.Sidenav);
  }
 
-
- openMenu = () => {
-   this.instance.open()
- }
  render() {
    return (
      <div >
@@ -85,7 +81,7 @@ class Sidebar extends Component {
            <a id="gmail" className="waves-effect waves-light btn-floating social-icon google" href="mailto:hermsrivas@gmail.com"><i class="fa fa-google"></i></a>
          </div>
        </ul>
-       <a  onCLick={this.openMenu}href="#!" data-target="slide-out" className="sidenav-trigger"><i class="material-icons">menu</i>
+       <a href="#!" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i>
 
        </a>
      </div>

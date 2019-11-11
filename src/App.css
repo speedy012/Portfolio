@@ -8,17 +8,17 @@
   background-image: url('night.jpeg');
   background-position: center;
   background-size: cover;
-  width:80%;
-  height: 100%;
+  width:80vw;
+  height: 100vh;
   position: absolute;
-  left: 20%;
+  left: 20vw;
   overflow-x: hidden;
 }
 
 .intro-body {
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 25vh;
+  left: 10vw;
   font-family: 'Helvetica';
 }
 
@@ -32,8 +32,8 @@ font-family: 'Helvetica' !important;
 text-transform: capitalize !important;
 font-weight: 900;
 position: absolute;
-top: 675%;
-left: 6%;
+top: 690vh;
+left: 6vw;
 }
 
 .portfolio-comp {
@@ -269,12 +269,10 @@ left: 6%;
   z-index: 999;
   position: absolute;
   overflow: hidden;
-
   top:45%;
   width: 130px;
   height: 50px;
   display: inline-block;
-
   margin: 25px 0 25px 25px;
   border-radius: 5px;
   color: #fff;
@@ -319,4 +317,52 @@ left: 6%;
 
 .icon:active:after {
   opacity: 0;
+}
+
+@media screen and (max-width: 992px){
+  .intro-comp{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    background-color: yellow;
+    top: 65%;
+    left: 30%;
+  }
+
+  .intro-body {
+    font-size: px;
+  }
+
+  .portfolio-comp{
+    position: absolute;
+    top:100;
+    left:0;
+    height: auto;
+    width: 100%;
+  }
+
+  .about-comp{
+    position: absolute;
+    top:195%;
+    left:0;
+    width: 100%;
+  }
+
+  .contact-comp{
+    position: absolute;
+    top:290%;
+    left:0;
+    width: 100%;
+  }
+  .sidenav-trigger{
+    z-index: 999;
+    position: fixed;
+    left: 0%;
+
+  }
 }
