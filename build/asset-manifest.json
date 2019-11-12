@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.eab4f5a8.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f77b5d33.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f77b5d33.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.60e60d4b.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.60e60d4b.js.map",
+    "static/css/2.7d36abf2.chunk.css": "/Portfolio/static/css/2.7d36abf2.chunk.css",
+    "static/js/2.c642a7d1.chunk.js": "/Portfolio/static/js/2.c642a7d1.chunk.js",
+    "static/js/2.c642a7d1.chunk.js.map": "/Portfolio/static/js/2.c642a7d1.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.f71b04452293b42374c8fcad5e752c97.js": "/Portfolio/precache-manifest.f71b04452293b42374c8fcad5e752c97.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/2.7d36abf2.chunk.css.map": "/Portfolio/static/css/2.7d36abf2.chunk.css.map",
+    "static/css/main.eab4f5a8.chunk.css.map": "/Portfolio/static/css/main.eab4f5a8.chunk.css.map",
+    "static/media/App.css": "/Portfolio/static/media/night.c8eec5da.jpeg",
+    "static/media/easy-parking.png": "/Portfolio/static/media/easy-parking.7b610018.png",
+    "static/media/me.jpg": "/Portfolio/static/media/me.54cd5a10.jpg",
+    "static/media/new_pic.jpg": "/Portfolio/static/media/new_pic.1712625a.jpg",
+    "static/media/solelykicks.png": "/Portfolio/static/media/solelykicks.94e28ff9.png"
+  }
+}
