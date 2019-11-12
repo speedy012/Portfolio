@@ -1,8 +1,10 @@
 {
+  "homepage": "https://speedy012.github.io/Portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "materialize-css": "^1.0.0-rc.2",
     "materialize-social": "^1.0.3",
     "react": "^16.9.0",
@@ -15,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
