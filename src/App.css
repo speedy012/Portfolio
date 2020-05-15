@@ -167,7 +167,7 @@
   background-color: #000000;
   position: absolute;
   left:30%;
-  top: 88%;
+  top: 91%;
   text-align: center;
 }
 
@@ -291,7 +291,9 @@
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
-
+.social-icons{
+  top: 88%
+}
 
 .intro-body a{
     font-size: 12px
