@@ -5,6 +5,7 @@ class About extends React.Component {
   render() {
 
   return (
+
     <div className="about-comp" id="a-comp">
       <h2 className="opening"> A little about me... </h2> <br/> <br/>
       <div >
