@@ -1,6 +1,5 @@
 import React from 'react';
 import Sidebar from './components/Sidebar.js'
-
 import About from './components/About.js'
 import Intro from './components/Intro.js'
 import Contact from './components/Contact.js'
@@ -11,17 +10,24 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 class App extends React.Component {
 
+  scrollPortfolio = () => {
+    let sp = document.getElementById('p-comp');
+    sp.scrollIntoView({behavior: "smooth"});
+  }
+
   render() {
     return (
 
       <div className="App">
 
       <Sidebar/>
+      <div id="btn">
+        <a onClick={this.scrollPortfolio} className="icon" href="portfolio">View My Work</a>
+      </div>
       <Intro/>
-      <Portfolio/>
+      <Portfolio className="scrollspy"/>
       <About/>
       <Contact/>
-
       </div>
 
     );

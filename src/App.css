@@ -1,6 +1,5 @@
 .App {
   width: auto;
-  border-style: solid;
   text-align: center;
   display: grid;
 }
@@ -9,11 +8,11 @@
   background-image: url('night.jpeg');
   background-position: center;
   background-size: cover;
-  width:80%;
-  height: 100%;
+  width:80vw;
+  height: 100vh;
   position: absolute;
-  left: 20%;
-  overflow: visible;
+  left: 20vw;
+  overflow-x: hidden;
 }
 
 .intro-body {
@@ -35,9 +34,14 @@ background-color: grey !important;
 font-family: 'Helvetica' !important;
 text-transform: capitalize !important;
 font-weight: 900;
+position: absolute;
+top: 690vh;
+left: 6vw;
 }
 
 .portfolio-comp {
+  overflow-y: hidden;
+  overflow-x: hidden;
   font-family: 'Helvetica';
   top: 100%;
   position: absolute;
@@ -45,7 +49,7 @@ font-weight: 900;
   background-position: center;
   background-size: cover;
   width: 80%;
-  height: 200%;
+  height: 210%;
   left: 20%;
 }
 
@@ -74,7 +78,8 @@ font-weight: 900;
 }
 
 .about-comp {
-  top: 300%;
+  overflow-x: hidden;
+  top: 310%;
   font-family: 'Helvetica';
   position: absolute;
   background-image: url('lightdesk.jpg');
@@ -102,23 +107,39 @@ font-weight: 900;
 }
 
 .bio-body{
-font-family: 'Helvetica';
+  font-family: 'Helvetica';
   position: absolute;
   left: 45%;
-  top: 50%;
-
+  top: 60%;
   font-weight: bold;
 }
 
 .contact-comp {
-  top: 400%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #E6D0B4;
+  top: 410%;
+  width: 80%;
+  left: 20%;
   position: absolute;
+  height: 55%;
+  font-family: 'Helvetica' !important;
 }
 
+.contact-body{
+  position: relative;
+  top: 10%;
+  left: 2%;
+  right: 10%;
+}
 
-
-
-
+.large {
+  position: absolute;
+  top: 95% !important;
+  left: 46%;
+  color: black !important;
+  cursor: default;
+}
 
 .sideBar {
   border-style: groove;
@@ -130,7 +151,7 @@ font-family: 'Helvetica';
 }
 
 .social-icons {
-  background-color: #191919;
+  background-color: #000000;
 
   position: absolute;
   left:30%;
@@ -155,20 +176,20 @@ font-family: 'Helvetica';
 
 .background {
 
-  background-color: #191919;
+  background-color: #000000;
 }
 
 .intro {
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #introduction:hover{
   color: white !important;
-
+  background-color: #404040;
 }
 
 .port {
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #portfolio {
@@ -177,10 +198,11 @@ font-family: 'Helvetica';
 
 #portfolio:hover {
   color: white;
+  background-color: #404040;
 }
 
 .ab{
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #about {
@@ -189,10 +211,11 @@ font-family: 'Helvetica';
 
 #about:hover {
   color:white;
+  background-color: #404040;
 }
 
 .co {
-  background-color: #191919;
+  background-color: #000000;
 }
 
 #contact {
@@ -201,6 +224,7 @@ font-family: 'Helvetica';
 
 #contact:hover {
   color: white;
+  background-color: #404040;
 }
 
 #introduction{
@@ -216,9 +240,8 @@ font-family: 'Helvetica';
   font-weight: 900;
 }
 
-
 #slide-out{
-    background-color: #191919;
+    background-color: #000000;
     font-family: 'Helvetica';
 }
 
@@ -236,4 +259,166 @@ font-family: 'Helvetica';
 }
 .material-icons{
   color:grey;
+}
+
+.material-icons:hover{
+  color: white !important;
+}
+
+.sidebar > .active {
+  border-bottom: 3px solid white;
+}
+
+.icon {
+  z-index: 999;
+  position: absolute;
+  overflow: hidden;
+  left: 52% !important;
+  top: 45% !important;
+  width: 130px;
+  height: 50px;
+  display: inline-block;
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-family: 'Helvetica' !important;
+  font-weight: 900;
+}
+
+.icon:nth-child(1) { background: grey; }
+
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+.icon:active:after {
+  opacity: 0;
+}
+
+@media screen and (max-width: 992px){
+  .intro-comp{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 75%;
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    top: 38%;
+    left: 40%;
+  }
+
+  .intro-body {
+    font-size: px;
+  }
+
+  .portfolio-comp{
+    position: absolute;
+    top:75%;
+    left:0;
+    height: auto;
+    width: 100%;
+  }
+
+  .about-comp{
+    position: absolute;
+    top:165%;
+    left:0;
+    width: 100%;
+  }
+
+  .contact-comp{
+    position: absolute;
+    top:250%;
+    left:0;
+    height: 30%;
+    width: 100%;
+  }
+  .sidenav-trigger{
+    z-index: 999;
+    position: fixed;
+    left: 0%;
+
+  }
+}
+@media only screen and (min-device-width: 924px) and (max-device-width: 1315px) {
+  .icon {
+    position: absolute;
+    top: 36%;
+    left: 40%;
+  }
+
+  .large {
+    position: absolute;
+    top: 81%;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+
+  .icon {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+  }
+
+  .large {
+    position: absolute;
+    top: 81%;
+
+  }
+
+}
+
+
+
+@media only screen and (min-device-width: 315px) and (max-device-width: 812px) {
+
+  .grey-text{
+    font-size: 25px;
+  }
+
+  /* .icon {
+    position: absolute;
+    left: 34%;
+    font-size: 11px;
+    z-index: 1;
+    width: 25%;
+    height: 3%;
+    padding-top: -2%;
+  } */
+
 }
