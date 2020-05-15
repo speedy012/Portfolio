@@ -40,13 +40,12 @@ class Sidebar extends Component {
              </div>
            </div>
            <div className="divider"></div>
-
          </li>
          <div className="sidebar">
          <Link  activeClass="active" to="i-comp" spy={true} smooth={true} offset={0} duration={500}>
          <li className="intro">
            <a id="introduction" href="#!">
-             Intro <i className="material-icons right grey-text">home</i>
+            Intro <i className="material-icons right grey-text">home</i>
            </a>
          </li>
          </Link>
@@ -71,6 +70,7 @@ class Sidebar extends Component {
             </a>
          </li>
          </Link>
+
          </div>
          <li>
             <div className="divider"></div>

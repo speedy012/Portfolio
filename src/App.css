@@ -17,8 +17,11 @@
 
 .intro-body {
   position: absolute;
-  top: 25vh;
-  left: 10vw;
+  top: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   font-family: 'Helvetica';
 }
 
@@ -97,6 +100,7 @@ left: 6vw;
 }
 
 .opening {
+  font-family: 'Helvetica' !important;
   position: absolute;
   top: 30%;
   left: 5%;
@@ -149,7 +153,6 @@ left: 6vw;
 
 .social-icons {
   background-color: #000000;
-
   position: absolute;
   left:30%;
   top: 85%;
@@ -172,8 +175,12 @@ left: 6vw;
 }
 
 .background {
-
   background-color: #000000;
+}
+
+.spacing {
+  padding-top: 10px;
+  display: block;
 }
 
 .intro {
@@ -182,6 +189,10 @@ left: 6vw;
 
 #introduction:hover{
   color: white !important;
+}
+
+.portfolio {
+  background-color: white;
   background-color: #404040;
 }
 
@@ -240,6 +251,7 @@ left: 6vw;
 #slide-out{
     background-color: #000000;
     font-family: 'Helvetica';
+    right: 10%;
 }
 
 #linkedin {
@@ -256,6 +268,23 @@ left: 6vw;
 }
 .material-icons{
   color:grey;
+  position: relative;
+  right: 15%;
+}
+
+.material-icons:hover{
+  color: white !important;
+}
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+  div.btn-large {
+    border: 1px solid white
+  }
 }
 
 .material-icons:hover{
