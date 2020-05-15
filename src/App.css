@@ -2,6 +2,7 @@
   width: auto;
   text-align: center;
   display: grid;
+  overflow: hidden
 }
 
 .intro-comp {
@@ -166,7 +167,7 @@
   background-color: #000000;
   position: absolute;
   left:30%;
-  top: 85%;
+  top: 88%;
   text-align: center;
 }
 
@@ -289,6 +290,8 @@
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
+
+
 
 .intro-body a{
     font-size: 12px
