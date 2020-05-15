@@ -5,6 +5,7 @@
 }
 
 .intro-comp {
+  overflow: hidden;
   background-image: url('night.jpeg');
   background-position: center;
   background-size: cover;
@@ -29,15 +30,25 @@
   color: white;
 }
 
-.btn-large {
-background-color: grey !important;
-font-family: 'Helvetica' !important;
-text-transform: capitalize !important;
-font-weight: 900;
-position: absolute;
-top: 690vh;
-left: 6vw;
+.intro-body a{
+
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: 'Helvetica' !important;
+    font-weight: 900;
+    background-color: grey !important;
+    font-family: 'Helvetica' !important;
+    text-transform: capitalize !important;
+    font-weight: 900;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+
 
 .portfolio-comp {
   overflow-y: hidden;
@@ -95,7 +106,7 @@ left: 6vw;
   right: 60%;
   width: 30%;
   bottom: 0%;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   position: absolute;
 }
 
@@ -135,8 +146,8 @@ left: 6vw;
 }
 
 .large {
-  position: absolute;
-  top: 95% !important;
+
+  top: 105% !important;
   left: 46%;
   color: black !important;
   cursor: default;
@@ -266,14 +277,11 @@ left: 6vw;
 #gmail {
   background-color: grey;
 }
-.material-icons{
-  color:grey;
-  position: relative;
-  right: 15%;
-}
 
-.material-icons:hover{
-  color: white !important;
+.material-icons{
+  color: white;
+  margin-left: 2px;
+
 }
 
 
@@ -282,8 +290,8 @@ left: 6vw;
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
-  div.btn-large {
-    border: 1px solid white
+.intro-body a{
+    font-size: 12px
   }
 }
 
@@ -295,25 +303,7 @@ left: 6vw;
   border-bottom: 3px solid white;
 }
 
-.icon {
-  z-index: 999;
-  position: absolute;
-  overflow: hidden;
-  left: 52% !important;
-  top: 45% !important;
-  width: 130px;
-  height: 50px;
-  display: inline-block;
-  margin: 25px 0 25px 25px;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  font-size: 15px;
-  font-family: 'Helvetica' !important;
-  font-weight: 900;
-}
+
 
 .icon:nth-child(1) { background: grey; }
 
@@ -359,12 +349,6 @@ left: 6vw;
     width: 100%;
   }
 
-  .icon {
-    position: absolute;
-    top: 38%;
-    left: 40%;
-  }
-
   .intro-body {
     font-size: px;
   }
@@ -373,37 +357,36 @@ left: 6vw;
     position: absolute;
     top:75%;
     left:0;
-    height: auto;
+    height: 108%;
     width: 100%;
   }
 
   .about-comp{
     position: absolute;
-    top:165%;
+    top:183%;
     left:0;
     width: 100%;
   }
 
   .contact-comp{
     position: absolute;
-    top:250%;
+    top:275%;
     left:0;
-    height: 30%;
+    height: 55%;
     width: 100%;
   }
   .sidenav-trigger{
     z-index: 999;
     position: fixed;
     left: 0%;
+  }
 
+  i.large {
+    text-align: center;
   }
 }
 @media only screen and (min-device-width: 924px) and (max-device-width: 1315px) {
-  .icon {
-    position: absolute;
-    top: 36%;
-    left: 40%;
-  }
+
 
   .large {
     position: absolute;
@@ -415,11 +398,6 @@ left: 6vw;
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
 
-  .icon {
-    position: absolute;
-    top: 45%;
-    left: 40%;
-  }
 
   .large {
     position: absolute;
@@ -437,14 +415,9 @@ left: 6vw;
     font-size: 25px;
   }
 
-  /* .icon {
-    position: absolute;
-    left: 34%;
-    font-size: 11px;
-    z-index: 1;
-    width: 25%;
-    height: 3%;
-    padding-top: -2%;
-  } */
+  #title{
+    font-size: 20px;
+  }
+
 
 }

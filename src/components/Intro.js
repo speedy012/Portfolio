@@ -8,6 +8,8 @@ class Intro extends React.Component {
     sp.scrollIntoView({behavior: "smooth"});
   }
 
+
+
   render() {
 
   return (
@@ -16,6 +18,7 @@ class Intro extends React.Component {
       <h2 className="grey-text"> Hi! I'm <span className="highlight"> Herman</span>, a <span className="highlight" >software engineer </span>
         <br/>living and working in <span className="highlight">NYC</span>
       </h2>
+        <a onClick={this.scrollPortfolio} className="icon" href="portfolio">View My Work</a>
       </div>
     </div>
   )
