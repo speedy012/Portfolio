@@ -11,17 +11,24 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 class App extends React.Component {
 
+  scrollPortfolio = () => {
+    let sp = document.getElementById('p-comp');
+    sp.scrollIntoView({behavior: "smooth"});
+  }
+
   render() {
     return (
 
       <div className="App">
 
       <Sidebar/>
+      <div id="btn">
+        <a onClick={this.scrollPortfolio} className="icon" href="#!">View My Work</a>
+      </div>
       <Intro/>
-      <Portfolio/>
+      <Portfolio className="scrollspy"/>
       <About/>
       <Contact/>
-
       </div>
 
     );
