@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link} from "react-scroll";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 
@@ -40,27 +41,33 @@ class Sidebar extends Component {
              </div>
            </div>
            <div className="divider"></div>
+           <span className="spacing"> </span>
          </li>
-         <li className="intro">
+         <div className="sidenav-bar">
+         <Link activeClass="active" to="intro-comp" spy={true} smooth={true} offset={0} duration= {500} className="intro">
            <a id="introduction" href="#!">
-             Intro <i className="material-icons right grey-text">home</i>
+            Intro <i className="material-icons right grey-text">home</i>
            </a>
-         </li>
-         <li className="port">
-           <a id="portfolio" href="#!">
+         </Link><br/><br/>
+
+         <Link activeClass="active" to="portfolio-comp" spy={true} smooth={true} offset={0} duration= {500} className="port">
+           <a  id="portfolio" href="#!">
             Portfolio <i className="material-icons right grey-text">apps</i>
             </a>
-         </li>
-         <li className="ab">
-           <a id="about" href="#!">
+         </Link><br/><br/>
+         <Link activeClass="active" to="about-comp" spy={true} smooth={true} offset={0} duration= {500} className="ab">
+           <a  id="about" href="#!">
             About Me <i className="material-icons right grey-text">account_box</i>
             </a>
-         </li>
-         <li className="co">
+         </Link><br/><br/>
+         <Link activeClass="active" to="contact-comp" spy={true} smooth={true} offset={0} duration= {500} className="co">
            <a id="contact" href="#!">
             Contact <i className="material-icons right grey-text">mail_outline</i>
             </a>
-         </li>
+         </Link>
+         <span className="spacing"> </span>
+         <span className="spacing"> </span>
+         </div>
          <li>
             <div className="divider"></div>
          </li>

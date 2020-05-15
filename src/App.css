@@ -1,5 +1,5 @@
 .App {
-  width: auto;
+  width: 100%;
   border-style: solid;
   text-align: center;
   display: grid;
@@ -13,13 +13,16 @@
   height: 100%;
   position: absolute;
   left: 20%;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 .intro-body {
   position: absolute;
   top: 25%;
-  left: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   font-family: 'Helvetica';
 }
 
@@ -35,13 +38,14 @@ font-weight: 900;
 }
 
 .portfolio-comp {
+  overflow-x: hidden;
   font-family: 'Helvetica';
   top: 100%;
   position: absolute;
   background-image: url('bluetint.jpg');
   background-position: center;
   background-size: cover;
-  width: 80%;
+  max-width: 80%;
   height: 200%;
   left: 20%;
 }
@@ -71,8 +75,9 @@ font-weight: 900;
 }
 
 .about-comp {
+  overflow-x: hidden;
   top: 300%;
-  font-family: 'Helvetica';
+  font-family: 'Helvetica' !important;
   position: absolute;
   background-image: url('lightdesk.jpg');
   background-position: center;
@@ -92,6 +97,7 @@ font-weight: 900;
 }
 
 .opening {
+  font-family: 'Helvetica' !important;
   position: absolute;
   top: 30%;
   left: 5%;
@@ -99,23 +105,29 @@ font-weight: 900;
 }
 
 .bio-body{
-font-family: 'Helvetica';
+  font-family: 'Helvetica' !important;
   position: absolute;
   left: 45%;
-  top: 50%;
-
+  top: 55%;
   font-weight: bold;
 }
 
 .contact-comp {
+  overflow-x: hidden;
+  background-color: #E6D0B4;
   top: 400%;
+  width: 99.8%;
   position: absolute;
+  height: 45%;
+  font-family: 'Helvetica' !important;
 }
 
-
-
-
-
+.contact-body{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+}
 
 .sideBar {
   border-style: groove;
@@ -127,8 +139,7 @@ font-family: 'Helvetica';
 }
 
 .social-icons {
-  background-color: #191919;
-
+  background-color: #000000;
   position: absolute;
   left:30%;
   top: 85%;
@@ -151,20 +162,29 @@ font-family: 'Helvetica';
 }
 
 .background {
-
   background-color: #191919;
+}
+
+.spacing {
+  padding-top: 10px;
+  display: block;
 }
 
 .intro {
   background-color: #191919;
+  position: relative;
+}
+
+.sidenav-bar > .active {
+  border-bottom: 1px solid white;
+  color: white
 }
 
 #introduction:hover{
   color: white !important;
-
 }
 
-.port {
+.portfolio {
   background-color: #191919;
 }
 
@@ -217,6 +237,7 @@ font-family: 'Helvetica';
 #slide-out{
     background-color: #191919;
     font-family: 'Helvetica';
+    right: 10%;
 }
 
 #linkedin {
@@ -233,4 +254,21 @@ font-family: 'Helvetica';
 }
 .material-icons{
   color:grey;
+  position: relative;
+  right: 15%;
+}
+
+.material-icons:hover{
+  color: white !important;
+}
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+  div.btn-large {
+    border: 1px solid white
+  }
 }
