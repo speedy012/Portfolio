@@ -14,7 +14,7 @@ class Contact extends React.Component {
   return (
     <div className="contact-comp" id="c-comp">
     <div className="contact-body">
-      <h3> Contact</h3>
+      <h2> Contact</h2>
       <h4> If you have any questions about my projects <br/>or will like to connect, <br/> just click on the link to send me an email: <a id="link" href="mailto:hermsrivas@gmail.com?subject=Request Resume"> here!</a></h4>
       <br/>
       <i onClick={this.scrollIntro} className="large material-icons" href="#!">arrow_upward</i>

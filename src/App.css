@@ -2,7 +2,8 @@
   width: auto;
   text-align: center;
   display: grid;
-  overflow: hidden
+  overflow: hidden;
+   overflow-x: hidden;
 }
 
 .intro-comp {
@@ -78,6 +79,12 @@
   color:black;
 }
 
+#p-link {
+  font-weight: bolder;
+  text-decoration: underline;
+  color:black;
+}
+
 .photo2 {
   position: relative;
   left: 2%;
@@ -124,7 +131,7 @@
   position: absolute;
   left: 45%;
   top: 60%;
-  font-weight: bold;
+
 }
 
 .contact-comp {
@@ -289,7 +296,65 @@
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+  and (-webkit-min-device-pixel-ratio: 3){
+
+    br {
+      clear: all
+    }
+
+  #link{
+
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 157px;
+    left: 225px;
+  }
+
+  .contact-body h2{
+    position: relative;
+    top: -29px;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .contact-body h4{
+
+    top: -18px;
+    font-size: x-large;
+  }
+
+.opening{
+  white-space: nowrap;
+  font-size: xx-large;
+  justify-content: center;
+  right: -3px;
+  font-weight: bold;
+}
+
+.bio-body{
+  top: 48%;
+  right: 6px;
+  font-size: 1.64rem;
+  padding-bottom: 10px;
+}
+
+.bio-body2{
+
+  position: absolute;
+  top: 75%;
+  justify-content: center;
+  font-weight: bold;
+
+}
+
+.bio-body2 h5{
+  left: 30px;
+  position: absolute;
+  white-space: nowrap;
+}
+
 
 .social-icons{
   top: 88%
@@ -301,7 +366,7 @@
 }
 
 .material-icons:hover{
-  color: white !important;
+  
 }
 
 .sidebar > .active {
@@ -346,6 +411,8 @@
 }
 
 @media screen and (max-width: 992px){
+
+
   .intro-comp{
     position: absolute;
     top:0;
@@ -371,15 +438,17 @@
     top:183%;
     left:0;
     width: 100%;
+    height: 82%
   }
 
   .contact-comp{
     position: absolute;
-    top:275%;
-    left:0;
-    height: 55%;
+    top: 259%;
+    left: 0;
+    height: 368px;
     width: 100%;
   }
+
   .sidenav-trigger{
     z-index: 999;
     position: fixed;
@@ -388,6 +457,9 @@
 
   i.large {
     text-align: center;
+  }
+  i.large:focus {
+    color: black
   }
 }
 @media only screen and (min-device-width: 924px) and (max-device-width: 1315px) {

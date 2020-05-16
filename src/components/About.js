@@ -13,8 +13,10 @@ class About extends React.Component {
       </div>
       <div>
         <h5 className="bio-body"> A full stack software engineer <br/> building software
-        to make people's <br/>life easier. <br/> <br/> Let's do something special! <br/> <br/>
-        </h5>
+        to make people's <br/>life easier.  </h5>
+      </div>
+      <div className="bio-body2">
+        <h5> Let's create something special! </h5>
       </div>
     </div>
   )

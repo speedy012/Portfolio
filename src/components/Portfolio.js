@@ -6,7 +6,7 @@ class Portfolio extends React.Component {
   return (
     <div className="portfolio-comp" id="p-comp" >
       <h2> Portfolio Projects </h2>
-      <h5> You can find more of my projects and contributions on <a id="link" href="https://github.com/speedy012"> github</a></h5><br/>
+      <h5> You can find more of my projects and contributions on <a id="p-link" href="https://github.com/speedy012"> github</a></h5><br/>
       <div>
         <img className="photo1" src={require('../easy-parking.png')} alt="project-pic"/>
       </div><br/>

@@ -10,7 +10,10 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 
 class App extends React.Component {
-
+  scrollPortfolio = () => {
+    let sp = document.getElementById('p-comp');
+    sp.scrollIntoView({behavior: "smooth"});
+  }
 
 
   render() {
