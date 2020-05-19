@@ -53,6 +53,8 @@
 
 
 .portfolio-comp {
+  margin-left:auto;
+    margin-right:auto;
   overflow-y: hidden;
   overflow-x: hidden;
   font-family: 'Helvetica';
@@ -62,7 +64,7 @@
   background-position: center;
   background-size: cover;
   width: 80%;
-  height: 205%;
+  height: 167%;
   left: 20%;
 }
 
@@ -98,14 +100,14 @@
 
 .about-comp {
   overflow-x: hidden;
-  top: 305%;
+  top: 267%;
   font-family: 'Helvetica';
   position: absolute;
   background-image: url('lightdesk.jpg');
   background-position: center;
   background-size: cover;
   width: 80%;
-  height: 109%;
+  height: 100%;
   left: 20%;
 }
 
@@ -136,15 +138,13 @@
 
 }
 
-.bio-body2 h5 {
-  
-}
+
 
 .contact-comp {
   overflow-y: hidden;
   overflow-x: hidden;
   background-color: #E6D0B4;
-  top: 414%;
+  top: 367%;
   width: 80%;
   left: 20%;
   position: absolute;
@@ -300,10 +300,69 @@
 
 
 
+
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3){
+
+    .bio-body2 h5{
+      left: 30px;
+      position: absolute;
+      white-space: nowrap;
+    }
+
+    .intro-comp{
+      position: absolute;
+      top:0;
+      left:0;
+      height: 75%;
+      width: 100%;
+    }
+
+
+    .about-comp{
+      position: absolute;
+      top:181%;
+      left:0;
+      width: 100%;
+      height: 82%
+    }
+
+    .contact-comp{
+      position: absolute;
+      top: 254%;
+      left: 0;
+      height: 46%;
+      width: 100%;
+    }
+
+    .sidenav-trigger{
+      z-index: 999;
+      position: fixed;
+      left: 0%;
+    }
+
+    i.large {
+      text-align: center;
+    }
+    i.large:focus {
+      color: black
+    }
+
+
+
+    .intro-body h2{
+      font-size: xx-large;
+    }
+
+    .portfolio-comp{
+      position: absolute;
+      top:75%;
+      left:0;
+      height: 106%;
+      width: 100%;
+    }
 
     br {
       clear: all
@@ -413,120 +472,63 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 1207px){
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
 
+    .portfolio-comp{height: 115%}
 
-  #slide-out {
+    .about-comp{top:189%}
+    .contact-comp{
+      top: 260%;
+      height: 53%;
 
-    transform: translateX(-105%) !important;
-  }
+    }
+    #link{
+      left: 242px;
+      top:160px
+    }
 
-  .intro-comp{
-
-    left: 0;
-    width: 100%
-
-  }
-  .portfolio-comp {
-    left: 0;
-    width: 100%;
-    top:100%;
-    height:130%
-  }
+    .social-icons {
+    top: 86%;
+}
 }
 
-@media only screen and (min-width: 996px) {
 
- }
-
-@media screen and (max-width: 996px){
-  i.material-icons{
-
-    left:0
-  }
-
-  .intro-comp{
-    position: absolute;
-    top:0;
-    left:0;
-    height: 75%;
-    width: 100%;
-  }
-
-  .intro-body {
-    font-size: px;
-  }
-
-  .portfolio-comp{
-    position: absolute;
-    top:75%;
-    left:0;
-    height: 108%;
-    width: 100%;
-  }
-
-  .about-comp{
-    position: absolute;
-    top:183%;
-    left:0;
-    width: 100%;
-    height: 82%
-  }
-
-  .contact-comp{
-    position: absolute;
-    top: 259%;
-    left: 0;
-    height: 368px;
-    width: 100%;
-  }
+@media only screen and (max-device-width: 1208px) {
 
   .sidenav-trigger{
     z-index: 999;
     position: fixed;
     left: 0%;
   }
-
-  i.large {
-    text-align: center;
-  }
-  i.large:focus {
-    color: black
-  }
-}
-
-
-
-
-@media screen and (max-width: 1207px){
-
 
   #slide-out {
     border: 5px solid white;
-    transform: translateX(-105%) ;
+    transform: translateX(-105%) !important;
   }
 
-  .intro-comp{
-    border: 2px solid yellow;
-    left: 0;
-    width: 100%
-
-  }
-  .portfolio-comp {
-    left: 0;
+  .intro-comp {
     width: 100%;
-
-    height:131%
+    left:0
   }
 
-  .bio-body2 h5 {
-    border: 2px solid
+  .portfolio-comp {
+    width: 100%;
+    left:0
   }
 
-  .sidenav-trigger{
-    z-index: 999;
-    position: fixed;
-    left: 0%;
+  .about-comp {
+    width: 100%;
+    left:0
   }
+
+  .contact-comp {
+    width: 100%;
+    left:0
+  }
+
+
 
 }
